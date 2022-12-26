@@ -1,0 +1,143 @@
+/* home */
+
+@supports (-webkit-touch-callout: none) {
+  .splash-screen-1,
+  .splash-wrapper,
+  .content-wrapper-categories,
+  .first-timer-wrapper,
+  .gameplay-wrapper,
+  .in-game-level-selection,
+  .e_loader,
+  .popup {
+    /* for ios safari 15, safe-area-inset-bottom is 0, so a special fix apply here */
+    min-height: -webkit-fill-available;
+    max-height: -webkit-fill-available;
+  }
+
+  .in-game-level-selection {
+    padding-bottom: 8px;
+  }
+  .loader_number {
+    margin-top: 56px;
+  }
+}
+.popup_content_wrapper_1 {
+  height: 100%;
+}
+.e_loader {
+  pointer-events: none;
+  height: 100%;
+}
+
+.letter {
+  display: inline-block;
+}
+.tricksword {
+  white-space: nowrap;
+}
+.popup_bg {
+  opacity: 0;
+}
+.popup_item {
+  display: none;
+}
+.popup_item.active {
+  display: block;
+}
+.category-card-link {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.gameplay-wrapper {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: 50;
+  height: 100vh;
+}
+
+.overlay {
+  pointer-events: none;
+}
+.swiper-pagination-bullet {
+  border-radius: 8px;
+  height: 8px;
+  opacity: 1;
+  background-color: black;
+  opacity: 0.3;
+  transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.swiper-pagination-bullet-active {
+  background-color: black;
+  border-radius: 8px;
+  opacity: 0.6;
+  width: 40px;
+}
+/* styles for gameplay */
+.placeholder-wrapper,
+.return-overlay {
+  pointer-events: none;
+}
+
+.in-game-level-selection {
+  display: none;
+}
+
+.drag-container {
+  z-index: 2;
+}
+
+/* .swiper-slide.swiper-card {
+  transition: all 500ms ease-in-out;
+}
+.swiper-backface-hidden .swiper-slide {
+  transform: scale(0.9) translateZ(0);
+  filter: blur(2px);
+}
+
+.swiper-slide.swiper-slide-active {
+  transform: scale(1) !important rotate(0deg);
+  opacity: 1 !important;
+  filter: blur(0px);
+}
+
+.swiper-backface-hidden .swiper-slide.swiper-slide-active {
+  transform: scale(1) translateZ(0) !important ;
+} */
+
+.tag-wrapper,
+.tag-1-container,
+.tag-2-container,
+.tag-3-container,
+.tag-4-container,
+.tag-5-container,
+.tag-6-container,
+.tag-7-container,
+.tag-8-container {
+  z-index: 100 !important;
+  pointer-events: none;
+}
+
+.title-wrapper :nth-child(2),
+.title-wrapper :nth-child(3),
+.title-wrapper :nth-child(4),
+.subtitle-wrapper :nth-child(2),
+.subtitle-wrapper :nth-child(3),
+.subtitle-wrapper :nth-child(4) {
+  opacity: 0;
+}
+
+.gameplay-card-copy.sub {
+  letter-spacing: 1px;
+}
+
+/* .loadingtext.tricks .tricksword {
+  display: inline-block;
+}
+
+.loadingtext.tricks .tricksword span {
+  position: absolute;
+} */
